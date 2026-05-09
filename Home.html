@@ -1,0 +1,375 @@
+<!-----Basic HTML Structure--->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+         <!-----Header Tags with nav or Toggle --->
+
+       <header class="header">
+            <h1 style="font-family:DM Sans, sans-serif; font-weight: bold;">Portfolio Webpage</h1>
+            
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#cert">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="theme-switch">
+            <input type="checkbox" id="toggleTheme">
+            <label for="toggleTheme" class="switch"></label>
+        </div>  
+            <div class="logo">   
+            <img src="./images/logoimg.png" alt="My Logo" width="60px" height="60px"/>
+        </div>
+
+             <div class="hover"></div>
+
+    </header>
+               
+          <!-------------------Home Section---------------------------------->
+    
+    <section class="home" id="home">
+    <h1>Hi! I'm Amaan Siddiqui</h1>
+    <p>Welcome to my portfolio website </p>
+    <p1>I'm a passionate Full Stack developer with a knack for creating stunning and functional websites.</p1>
+    <br>
+    <p2>Explore my work and let's connect!</p2>
+    <br>
+    <img src="./images/profile image.jpg" alt="Profile Image" class="profile-image"/>
+
+     <ul class="social-icons">
+      <a href="#" class="fa fa-linkedin"></a>        
+      <a href="#" class="fa fa-instagram"></a>       
+      <a href="#" class="fa fa-facebook"></a>        
+       <a href="#" class="fa fa-twitter"></a>   
+</ul> 
+
+<section class="resume-section">
+
+    <a href="./images/SDE.Resume.pdf" download class="resume-btn">
+        ⬇ Download Resume
+    </a>
+
+</section>
+
+</section>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+     <!-------------------About Section---------------------------------->
+     
+          <section class="about" id="about">
+             </div>  
+            <div class="logo">   
+            <img src="./images/profile image.jpg" alt="My Logo"/>
+        </div>
+ 
+            <h1>About Me</h1>
+            <p>I'm a Full Stack developer with a passion for creating beautiful 
+                <br>and functional websites.  I have experience in HTML, CSS, JavaScript, 
+                and various web development frameworks.I enjoy working on projects that challenge me and allow me to grow as a developer.
+             Clearly state your primary stack ( MERN STACK) and proficiency in languages like JavaScript, React, Node, or Database.
+             Emphasize your ability to manage both front-end user experience and back-end logic, including API development and database management.
+            <br>Highlight problem-solving, collaboration, and a commitment to learning emerging technologies.
+            <input type="button" value="READ MORE" class="read-btn">
+                        <label for="READ MORE"></label>
+                    </p>
+                </section>
+
+                <!-------------------Skills Section---------------------------------->
+
+                <section id="skills" class="skills-section">
+    <header>
+        <h2>Skills</h2>
+    </header>
+
+    <article class="skills-intro">
+        <p>Here are the technical skills I have gained during my development journey.</p>
+    </article>
+
+    <div class="skills-container">
+
+        <div class="skill" data-percentage="90">
+            <label>HTML,CSS</label>
+            <progress value="90" max="100"></progress>
+            <span class="skill-percent">90%</span>
+        </div>
+
+        <div class="skill" data-percentage="85">
+            <label>DSA</label>
+            <progress value="85" max="100"></progress>
+            <span class="skill-percent">85%</span>
+        </div>
+
+        <div class="skill" data-percentage="80">
+            <label>JavaScript</label>
+            <progress value="80" max="100"></progress>
+            <span class="skill-percent">80%</span>
+        </div>
+
+        <div class="skill" data-percentage="75">
+            <label>React.js</label>
+            <progress value="75" max="100"></progress>
+            <span class="skill-percent">75%</span>
+        </div>
+
+        <div class="skill" data-percentage="70">
+            <label>Node.js</label>
+            <progress value="70" max="100"></progress>
+            <span class="skill-percent">70%</span>
+        </div>
+
+        <div class="skill" data-percentage="65">
+            <label>MongoDB</label>
+            <progress value="65" max="100"></progress>
+            <span class="skill-percent">65%</span>
+        </div>
+
+        <div class="skill" data-percentage="60">
+            <label>Express.js</label>
+            <progress value="60" max="100"></progress>
+            <span class="skill-percent">60%</span>
+        </div>
+
+        <div class="skill" data-percentage="85">
+            <label>Git & GitHub</label>
+            <progress value="85" max="100"></progress>
+            <span class="skill-percent">85%</span>
+        </div>
+    </div>
+</section>
+          
+        <!--------Certificates Section-------------->
+        
+        <section class="cert-section" id="cert">
+    <header>
+        <h2>Relevant <span>Certifications</span> </h2>
+    </header>
+
+    <div class="cert-container">
+
+        <article class="cert-card">
+            <h3>FullStack Course</h3>
+            <p class="issuer">Corizo Edutech</p>
+            <p class="cert-desc">
+                Covered fundamentals of HTML, CSS, JavaScript, variables, loops, functions, and DOM basics.
+            </p>
+            <p class="cert-year">Issued: 2025</p>
+
+            <a href="https://credentials.corizo.in/credential/2e65acdb-da2d-4117-8a3d-7641f54ded88" target="certificate" class="cert-btn">
+                View Certificate
+            </a>
+
+        </article>
+
+        <article class="cert-card">
+            <h3>FullStack MasterClass</h3>
+            <p class="issuer">NoviTech R&D PVT LTD</p>
+            <p class="cert-desc">
+                Learned MERN Stack, API development, authentication, and deployment.
+            </p>
+            <p class="cert-year">Issued: 2025</p>
+
+             <a href="./images/MOHAMMAD AMAAN (1).pdf" target="certificate" class="cert-btn">
+                View Certificate
+            </a> 
+
+        </article>
+
+        <article class="cert-card">
+            <h3>Web Development</h3>
+            <p class="issuer">ZIDIO Development PVT LTD</p>
+            <p class="cert-desc">
+                Learned React components, hooks, routing, and real-world projects.
+            </p>
+            <p class="cert-year">Issued: 2025</p>
+
+             <a href="./images/Tranning Certificate.pdf" target="certificate" class="cert-btn">
+                View Certificate
+            </a>
+        </article>
+
+    </div>
+</section>
+
+
+    <!----------------------projects section----------------------->
+
+<section class="projects-section" id="projects">
+    
+    <!-- Section Heading -->
+    <header class="section-header">
+        <h2>
+            Latest <span>Project</span>
+        </h2>
+    </header>
+    <main class="projects-container">
+
+        <!-- Project Card 1 -->
+        <article class="project-card">
+            <figure>
+                <img src="./images/excel analaytics.webp" alt="Excel Analaytic Project"></figure>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card">
+            <figure>
+                <img src="./images/quiz.png" alt="AINTERACTIVE QUIZ APP Project"></figure>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card">
+            <figure>
+                <img src="./images/crudapp.webp" alt="CURD App Project"></figure>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="project-card">
+            <figure>
+                <img src="./images/REALCHAT.jpg" alt="REAL TIME CHAT APPLICATION Project"></figure>
+        </article>
+
+        <!-- Project Card 5 -->
+        <article class="project-card">
+            <figure>
+                <img src="./images/learn.png" alt="E-learning-Platform-UI"></figure>
+        </article>
+
+        <!-- Project Card 6 -->
+        <article class="project-card">
+            <figure>
+                <img src="./images/ecoweb.png" alt="E-commerce MERN Project"></figure>
+        </article>
+    </main>
+</section>
+
+<!--------------------- Contact Section ----------------->
+
+<section class="contact-section">
+
+    <!-- Section Heading -->
+    <header class="contact-header" id="contact">
+        <h2>
+            Contact <span>Me!</span>
+        </h2>
+    </header>
+    <main>
+        <form class="contact-form" action="#" method="POST">
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname" 
+                    placeholder="Enter your full name" 
+                    required
+                >
+            </div>
+ 
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email" 
+                    required    >
+            </div>
+ 
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    placeholder="Enter your phone number" 
+                    required      >
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Email Subject</label>
+                <input 
+                    type="text" 
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Enter subject" 
+                    required       >
+            </div>
+
+          
+            <div class="form-group full-width">
+                <label for="message">Your Message</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="6" 
+                    placeholder="Write your message..." 
+                    required
+                ></textarea>
+            </div>
+
+            <!-- Button -->
+            <div class="button-container">
+                <button type="submit">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </main>
+</section>
+
+<!------------------------ Footer Section----------------->
+
+<footer class="footer-section">
+
+    <section class="footer-content">
+
+        <!-- Heading -->
+        <header class="footer-header">
+            <h2>Let's <span2>Connect</span2></h2>
+            <p>
+                Feel free to contact me for projects, collaborations, or any queries.
+            </p>
+        </header>
+        <nav class="footer-buttons">
+
+          
+            <a href="telephone" class="call-btn">📞 Call Me</a>
+
+            <a href="mail" class="email-btn">✉️ Email Me</a>
+         </nav>
+    </section>
+
+    <section class="footer-bottom">
+        <p>
+            © 2026 amaan Siddiqui | All Rights Reserved
+        </p>
+        <button id="backToTop" title="Back to Top">
+            ⬆️ Back to Top
+        </button>
+    </section>
+</footer>
+</body>
+</html>
+
+<!-- End of HTML Document -->
