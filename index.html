@@ -12,7 +12,7 @@
          <!-----Header Tags with nav or Toggle --->
 
        <header class="header">
-            <h1 style="font-family:DM Sans, sans-serif; font-weight: bold;">Portfolio Webpage</h1>
+            <h1 style="font-family:DM Sans, sans-serif; font-weight: bold;">Amaan <span>Portfolio</span></h1>
             
 
         <nav class="nav">
@@ -38,14 +38,50 @@
                
           <!-------------------Home Section---------------------------------->
     
-    <section class="home" id="home">
-    <h1>Hi! I'm Amaan Siddiqui</h1>
-    <p>Welcome to my portfolio website </p>
-    <p1>I'm a passionate Full Stack developer with a knack for creating stunning and functional websites.</p1>
+    <section class="home reveal" id="home">
+    <h1 class="reveal-item">Hi! I'm Amaan Siddiqui</h1>
+    <p class="typing-text">
+    I am <span id="typewriter"></span><span class="cursor">|</span> </p>
+    <script>
+ const words = ["Frontend Developer", "MERN Stack Developer", "Web Designer", "Freelancer"];
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+let speed = 100;
+
+function typeEffect() {
+    const currentWord = words[wordIndex];
+    const display = document.getElementById("typewriter");
+
+    if (!deleting) {
+        display.textContent = currentWord.substring(0, charIndex++);
+        if (charIndex > currentWord.length) {
+            deleting = true;
+            speed = 80;
+            setTimeout(typeEffect, 1200); // wait before deleting
+            return;
+        }
+    } else {
+        display.textContent = currentWord.substring(0, charIndex--);
+        if (charIndex < 0) {
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            speed = 120;
+        }
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();
+</script>
     <br>
-    <p2>Explore my work and let's connect!</p2>
+    <p1 class="reveal-item">Welcome to my portfolio website!!</p1>
     <br>
-    <img src="./images/profile image.jpg" alt="Profile Image" class="profile-image"/>
+    <p2 class="reveal-item">Explore my work and let's connect!</p2>
+    <br>
+    <img src="./images/profile image.jpg" alt="Profile Image" class="profile-image reveal-item"/>
 
      <ul class="social-icons">
       <a href="#" class="fa fa-linkedin"></a>        
@@ -74,17 +110,23 @@
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 
      <!-------------------About Section---------------------------------->
      
-          <section class="about" id="about">
+          <section class="about reveal" id="about">
              </div>  
             <div class="logo">   
-            <img src="./images/profile image.jpg" alt="My Logo"/>
+            <img src="./images/about.png" alt="My Logo" class="reveal-item"/>
         </div>
  
-            <h1>About Me</h1>
-            <p>I'm a Full Stack developer with a passion for creating beautiful 
+            <h1 class="reveal-item">About <span>Me</span></h1>
+            <p class="reveal-item">I'm a Full Stack developer with a passion for creating beautiful 
+
                 <br>and functional websites.  I have experience in HTML, CSS, JavaScript, 
                 and various web development frameworks.I enjoy working on projects that challenge me and allow me to grow as a developer.
              Clearly state your primary stack ( MERN STACK) and proficiency in languages like JavaScript, React, Node, or Database.
@@ -97,78 +139,132 @@
 
                 <!-------------------Skills Section---------------------------------->
 
-                <section id="skills" class="skills-section">
+<section id="skills" class="skills-section">
     <header>
         <h2>Skills</h2>
     </header>
-
+     <img src="./images/skills.png" alt="Skills Image" class="skills-image"/>
     <article class="skills-intro">
-        <p>Here are the technical skills I have gained during my development journey.</p>
+      <p>Here are the technical skills I have gained during my development journey.</p>
     </article>
 
     <div class="skills-container">
 
         <div class="skill" data-percentage="90">
-            <label>HTML,CSS</label>
-            <progress value="90" max="100"></progress>
+            <label>HTML, CSS</label>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">90%</span>
         </div>
 
-        <div class="skill" data-percentage="85">
+        <div class="skill" data-percentage="50">
             <label>DSA</label>
-            <progress value="85" max="100"></progress>
-            <span class="skill-percent">85%</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <span class="skill-percent">50%</span>
         </div>
 
         <div class="skill" data-percentage="80">
             <label>JavaScript</label>
-            <progress value="80" max="100"></progress>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">80%</span>
         </div>
 
         <div class="skill" data-percentage="75">
             <label>React.js</label>
-            <progress value="75" max="100"></progress>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">75%</span>
         </div>
 
         <div class="skill" data-percentage="70">
             <label>Node.js</label>
-            <progress value="70" max="100"></progress>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">70%</span>
         </div>
 
         <div class="skill" data-percentage="65">
             <label>MongoDB</label>
-            <progress value="65" max="100"></progress>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">65%</span>
         </div>
 
         <div class="skill" data-percentage="60">
             <label>Express.js</label>
-            <progress value="60" max="100"></progress>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">60%</span>
         </div>
 
         <div class="skill" data-percentage="85">
             <label>Git & GitHub</label>
-            <progress value="85" max="100"></progress>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <span class="skill-percent">85%</span>
         </div>
+
     </div>
 </section>
-          
+
+<script src="./scroll-reveal.js"></script>
+
+<!-- ================== JavaScript Animation =================== -->
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const skillsSection = document.querySelector("#skills");
+    const skills = document.querySelectorAll(".skill");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                skills.forEach(skill => {
+                    const barFill = skill.querySelector(".progress-fill");
+                    const percent = skill.getAttribute("data-percentage");
+                    barFill.style.width = percent + "%";
+                });
+                observer.unobserve(skillsSection);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(skillsSection);
+});
+</script>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>   
+       
         <!--------Certificates Section-------------->
         
-        <section class="cert-section" id="cert">
-    <header>
+<section class="cert-section reveal" id="cert">
+    <header class="reveal-item">
         <h2>Relevant <span>Certifications</span> </h2>
     </header>
 
+
     <div class="cert-container">
 
-        <article class="cert-card">
+        <article class="cert-card reveal-item">
             <h3>FullStack Course</h3>
+
             <p class="issuer">Corizo Edutech</p>
             <p class="cert-desc">
                 Covered fundamentals of HTML, CSS, JavaScript, variables, loops, functions, and DOM basics.
@@ -181,8 +277,9 @@
 
         </article>
 
-        <article class="cert-card">
+        <article class="cert-card reveal-item">
             <h3>FullStack MasterClass</h3>
+
             <p class="issuer">NoviTech R&D PVT LTD</p>
             <p class="cert-desc">
                 Learned MERN Stack, API development, authentication, and deployment.
@@ -195,8 +292,9 @@
 
         </article>
 
-        <article class="cert-card">
+        <article class="cert-card reveal-item">
             <h3>Web Development</h3>
+
             <p class="issuer">ZIDIO Development PVT LTD</p>
             <p class="cert-desc">
                 Learned React components, hooks, routing, and real-world projects.
@@ -214,10 +312,13 @@
 
     <!----------------------projects section----------------------->
 
-<section class="projects-section" id="projects">
+<section class="projects-section reveal" id="projects">
+
+    
     
     <!-- Section Heading -->
-    <header class="section-header">
+    <header class="section-header reveal-item">
+
         <h2>
             Latest <span>Project</span>
         </h2>
@@ -264,7 +365,7 @@
 
 <!--------------------- Contact Section ----------------->
 
-<section class="contact-section">
+<section class="contact-section reveal">
 
     <!-- Section Heading -->
     <header class="contact-header" id="contact">
@@ -342,7 +443,7 @@
 
 <footer class="footer-section">
 
-    <section class="footer-content">
+        <section class="footer-content reveal-item">
 
         <!-- Heading -->
         <header class="footer-header">
@@ -361,12 +462,18 @@
     </section>
 
     <section class="footer-bottom">
+          <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#cert">Certificates</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <p>
             © 2026 amaan Siddiqui | All Rights Reserved
         </p>
-        <button id="backToTop" title="Back to Top">
-            ⬆️ Back to Top
-        </button>
+       
     </section>
 </footer>
 </body>
