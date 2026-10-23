@@ -125,17 +125,29 @@ typeEffect();
         </div>
  
             <h1 class="reveal-item">About <span>Me</span></h1>
-            <p class="reveal-item">I'm a Full Stack developer with a passion for creating beautiful 
+            <p class="reveal-item" id="aboutText">I'm a Full Stack developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB, and I specialize in building responsive, user-focused web applications.
+                <span id="aboutExtra" style="display: none;">
+                     My work covers both front-end design and back-end logic, including API development, database management, and deployment. I enjoy solving real-world problems, collaborating with teams, and continuously learning modern technologies.
+                </span>
+                <button type="button" class="read-btn" aria-label="Read more about me" aria-expanded="false" aria-controls="aboutExtra">READ MORE</button>
+            </p>
+        </section>
 
-                <br>and functional websites.  I have experience in HTML, CSS, JavaScript, 
-                and various web development frameworks.I enjoy working on projects that challenge me and allow me to grow as a developer.
-             Clearly state your primary stack ( MERN STACK) and proficiency in languages like JavaScript, React, Node, or Database.
-             Emphasize your ability to manage both front-end user experience and back-end logic, including API development and database management.
-            <br>Highlight problem-solving, collaboration, and a commitment to learning emerging technologies.
-            <input type="button" value="READ MORE" class="read-btn">
-                        <label for="READ MORE"></label>
-                    </p>
-                </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const readBtn = document.querySelector('.read-btn');
+                const aboutExtra = document.getElementById('aboutExtra');
+
+                if (readBtn && aboutExtra) {
+                    readBtn.addEventListener('click', function () {
+                        const isHidden = aboutExtra.style.display === 'none';
+                        aboutExtra.style.display = isHidden ? 'inline' : 'none';
+                        readBtn.textContent = isHidden ? 'READ LESS' : 'READ MORE';
+                        readBtn.setAttribute('aria-expanded', String(isHidden));
+                    });
+                }
+            });
+        </script>
 
                 <!-------------------Skills Section---------------------------------->
 
@@ -276,6 +288,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
 
         </article>
+
+        
 
         <article class="cert-card reveal-item">
             <h3>FullStack MasterClass</h3>
